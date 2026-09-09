@@ -1,0 +1,10 @@
+services:
+  spatial-memory-game:
+    image: houndmediaserver/spatial-memory-game:latest
+    ports:
+      - "1212:1212"
+    environment:
+      - PORT=1212
+      - SCORE_SECRET=whatever
+    volumes:
+      - ./leaderboard.db:/app/leaderboard.db

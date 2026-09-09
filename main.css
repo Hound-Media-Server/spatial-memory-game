@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #faf8ef;
+}
+
+#game-title {
+  font-size: 43px;
+}
+
+#gameboard-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5.5px;
+  background-color: #c08f8f;
+  padding: 10px;
+  width: 520px;
+}
+
+#gameboard-col {
+  padding: 0;
+}
+
+#leaderboard-container {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  font-family: "Clear Sans", sans-serif;
+  text-align: left;
+}
+
+#time-container {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  font-family: "Clear Sans", sans-serif;
+  text-align: right;
+}
+
+.leaderboard-entry {
+  margin-bottom: 6px;
+}
+
+.leaderboard-rank {
+  color: #ae4646;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.leaderboard-name {
+  color: #333;
+  font-size: 24px;
+}
+
+.leaderboard-score {
+  color: rgb(175, 156, 47);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.stopwatch {
+  font-family: "Clear Sans", sans-serif;
+  color: rgb(216, 11, 11);
+}
+
+.stopwatch-split {
+  color: rgb(175, 156, 47);
+}
+
+#gameboard {
+  margin: 0;
+}
+
+.attribute {
+  font-size: 19px;
+}
+
+#instructions {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#score-container {
+  width: 520px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Clear Sans", sans-serif;
+}
+
+#body-container {
+  background-color: #faf8ef;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#top-container {
+  display: block;
+  margin: auto;
+  background-color: #eaeeaf;
+}
+
+#score,
+#errors {
+  color: red;
+}
+
+#status {
+  color: green;
+}
+
+#restart,
+#submit-score {
+  width: 88%;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-family: "Clear Sans", sans-serif;
+}
+
+#game-container {
+  margin: 0;
+  width: 100%;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px #f3f70b;
+  }
+  50% {
+    box-shadow: 0 0 40px #f3f70b;
+  }
+  100% {
+    box-shadow: 0 0 10px #f3f70b;
+  }
+}
+
+.button-glow {
+  animation: glowing 1500ms infinite;
+}
