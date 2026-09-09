@@ -6,5 +6,6 @@ services:
     environment:
       - PORT=1212
       - SCORE_SECRET=whatever
+      - DATA_DIR=/app/data
     volumes:
-      - ./leaderboard.db:/app/leaderboard.db
+      - ./data:/app/data

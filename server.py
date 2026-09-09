@@ -16,7 +16,8 @@ HOST = "0.0.0.0"
 PORT = int(os.environ.get("PORT", 1212))
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = BASE_DIR / "leaderboard.db"
+DATA_DIR = Path(os.environ.get("DATA_DIR", BASE_DIR))
+DB_PATH = DATA_DIR / "leaderboard.db"
 INDEX_PATH = BASE_DIR / "index.html"
 
 SECRET = os.environ.get(
@@ -42,6 +43,7 @@ def get_db():
 
 
 def init_db():
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
     db = get_db()
     db.execute("""
         CREATE TABLE IF NOT EXISTS leaderboard (
