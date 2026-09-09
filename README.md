@@ -2,6 +2,8 @@
 
 It is said that chimpanzees can play this game better than humans...
 
+[Demo](https://chimp2.yuwono.xyz/)
+
 To deploy, copy the compose file below, run `docker compose up -d`, and open http://localhost:1212
 
 ```
