@@ -372,7 +372,6 @@ class Handler(BaseHTTPRequestHandler):
             ".js": "text/javascript; charset=utf-8",
             ".css": "text/css; charset=utf-8",
             ".mp3": "audio/mpeg",
-            ".svg": "image/svg+xml",
             ".ico": "image/x-icon",
         }.get(path.suffix.lower(), "application/octet-stream")
 
@@ -400,7 +399,6 @@ if __name__ == "__main__":
 
     print(f"Database: {DB_PATH}")
     print(f"Serving:  http://localhost:{PORT}")
-    print("Press Ctrl+C to stop.")
 
     server = ThreadingHTTPServer(
         (HOST, PORT),
